@@ -1,0 +1,119 @@
+.body{
+    display: flex;
+    padding: 20px;
+    
+}
+.row{
+    display: flex
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3em;
+    background-color: #F9DEC9;
+}
+
+.page-containter{
+    padding: 20px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #e9afa3;
+}
+
+.logo{
+    font-size: 2em;
+    color: #3c4159;
+}
+
+.link{
+    font-size: 1.5em;
+    padding-top: 3.5%;
+}
+
+.card{
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    background-color: #99b2dd;
+    text-align: center;
+    padding: 2em;
+    margin-bottom: 20px;
+}
+
+.social-list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.social-item{
+    color: #3c2516;
+    opacity: 0.5;
+    font-size: 1.25rem;
+}
+
+.social-item:hover,
+.social-link:focus{
+    opacity: 1;
+}
+
+.project-screenshot{
+    border: 4px solid #3c4159;
+    width: 100%;
+    height: 50%;
+
+}
+
+.profile-name{
+    font-size: 2rem;
+    line-height: 1;
+    color: #3c4159;
+}
+
+.profile-name::after {
+    content:"";
+    display: block;
+    height: 1px;
+    width: 2em;
+    background: #3c4159;
+    margin: 0.7em auto 0.5em;
+    opacity: 0.35;
+}
+
+@media(min-width: 600px){
+    .card{
+        flex-direction: row;
+    }
+
+    .profile-main {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    .profile-name::after {
+        margin-left: 0;
+    }
+}
+
+.footer-column-container{
+    display: flex;
+    color: #3c4159;
+    background-color: #895159;
+
+}
+
+.column-footer{
+    flex-basis: 100%;
+    margin: 5em;
+
+}
